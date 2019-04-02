@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "11251348-754b-4244-82b6-5d39424d20f2",
+		"name": "express-restful-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post - hi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"maria\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}:{{HTTP_PORT}}/hi",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"hi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get - hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{BASE_URL}}:{{HTTP_PORT}}/hello",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"port": "{{HTTP_PORT}}",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
